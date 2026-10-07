@@ -9,6 +9,10 @@ Route::get('/', function () {
 });
 
 
+Route::get('/pcr', function () {
+    return 'Selamat Datang di Website Kampus PCR!';
+});
+
 Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/dashboard', function () {
