@@ -60,7 +60,7 @@
             <div class="user-card d-flex d-md-none align-items-center justify-content-between justify-content-md-center pb-4">
                 <div class="d-flex align-items-center">
                     <div class="avatar-lg me-4">
-                        <img src="{{ asset('assets-admin/img/team/profile-picture-3.jpg')}}" class="card-img-top rounded-circle border-white" alt="Bonnie Green">
+                        <img src="{{ asset('assets-admin/img/team/profile-picture-3.jpg')}}" class="card-img-top rounded-circle border-white" alt="Mas Amba">
                     </div>
                     <div class="d-block">
                         <h2 class="h5 mb-3">Hi, Jane</h2>
@@ -87,7 +87,7 @@
                         <span class="sidebar-icon">
                             <img src="{{ asset('assets-admin/img/brand/light.svg')}}" height="20" width="20" alt="Volt Logo">
                         </span>
-                        <span class="mt-1 ms-1 sidebar-text">Volt Overview</span>
+                        <span class="mt-1 ms-1 sidebar-text">AmbaMart</span>
                     </a>
                 </li>
                 <li class="nav-item  active ">
@@ -596,9 +596,9 @@
 								data-bs-toggle="dropdown" aria-expanded="false">
 								<div class="media d-flex align-items-center">
 									<img class="avatar rounded-circle" alt="Image placeholder"
-										src="{{asset('assets-admin/img/team/profile-picture-3.jpg')}}">
+										src="{{asset('assets-admin/img/team/profileAmba.png')}}">
 									<div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
-										<span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
+										<span class="mb-0 font-small fw-bold text-gray-900">Mas Ambatukam</span>
 									</div>
 								</div>
 							</a>
@@ -874,12 +874,12 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="{{asset('assets-admin/img/team/profile-picture-1.jpg')}}">
+														src="{{asset('assets-admin/img/team/siImut.png')}}">
 												</a>
 											</div>
 											<div class="col-auto ms--2">
 												<h4 class="h6 mb-0">
-													<a href="#">Chris Wood</a>
+													<a href="#">Si imut</a>
 												</h4>
 												<div class="d-flex align-items-center">
 													<div class="bg-success dot rounded-circle me-1"></div>
@@ -906,12 +906,12 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="{{asset('assets-admin/img/team/profile-picture-2.jpg')}}">
+														src="{{asset('assets-admin/img/team/profileRusdi.png')}}">
 												</a>
 											</div>
 											<div class="col-auto ms--2">
 												<h4 class="h6 mb-0">
-													<a href="#">Jose Leos</a>
+													<a href="#">Mas Rusdi</a>
 												</h4>
 												<div class="d-flex align-items-center">
 													<div class="bg-warning dot rounded-circle me-1"></div>
@@ -938,12 +938,12 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="{{asset('assets-admin/img/team/profile-picture-3.jpg')}}">
+														src="{{asset('assets-admin/img/team/profileRehan.png')}}">
 												</a>
 											</div>
 											<div class="col-auto ms--2">
 												<h4 class="h6 mb-0">
-													<a href="#">Bonnie Green</a>
+													<a href="#">Rehan Wangsaf</a>
 												</h4>
 												<div class="d-flex align-items-center">
 													<div class="bg-danger dot rounded-circle me-1"></div>
@@ -970,12 +970,12 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="{{asset('assets-admin/img/team/profile-picture-4.jpg')}}">
+														src="{{asset('assets-admin/img/team/profileIroni.png')}}">
 												</a>
 											</div>
 											<div class="col-auto ms--2">
 												<h4 class="h6 mb-0">
-													<a href="#">Neil Sims</a>
+													<a href="#">Mas Ironi</a>
 												</h4>
 												<div class="d-flex align-items-center">
 													<div class="bg-danger dot rounded-circle me-1"></div>
@@ -1117,9 +1117,9 @@
 					<div class="card shadow border-0 text-center p-0">
 						<div class="profile-cover rounded-top" data-background="{{asset('assets-admin/img/profile-cover.jpg')}}" style="background: url(&quot;assets-admin/img/profile-cover.jpg&quot;);"></div>
 						<div class="card-body pb-5">
-							<img src="{{asset('assets-admin/img/team/profile-picture-1.jpg')}}" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
-							<h4 class="h3">Neil Sims</h4>
-							<h5 class="fw-normal">Senior Software Engineer</h5>
+							<img src="{{asset('assets-admin/img/team/profileAmba.png')}}" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
+							<h4 class="h3">Mas Amba</h4>
+							<h5 class="fw-normal">Skilled Shaker</h5>
 							<p class="text-gray mb-4">New York, USA</p>
 							<a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
 								<svg class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z"></path></svg>
