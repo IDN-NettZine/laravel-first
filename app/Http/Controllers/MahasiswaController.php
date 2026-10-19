@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -35,7 +36,7 @@ class MahasiswaController extends Controller
      */
     public function show(string $param1)
     {
-        return 'Halo Siswa : ' . $param1;
+        return 'Data Mahasiswa : ' . $param1;
     }
 
     /**
@@ -61,5 +62,4 @@ class MahasiswaController extends Controller
     {
         //
     }
-
 }
