@@ -5,6 +5,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\PelangganController;
+
+Route::resource('pelanggan', PelangganController::class);
 
 Route::get('/', function () {
     return view('welcome');
