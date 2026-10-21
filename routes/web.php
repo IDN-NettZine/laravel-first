@@ -9,6 +9,8 @@ use App\Http\Controllers\PelangganController;
 
 Route::resource('pelanggan', PelangganController::class);
 
+// Route::post('/pelanggan', [PelangganController::class, 'store']);
+
 Route::get('/', function () {
     return view('welcome');
 });
