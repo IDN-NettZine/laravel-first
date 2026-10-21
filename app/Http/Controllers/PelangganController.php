@@ -32,14 +32,25 @@ class PelangganController extends Controller
 
         //    dd($request->all()); // <--- Tambahkan baris ini untuk debug
 
-        $data['first_name'] = $request->first_name;
-        $data['last_name'] = $request->last_name;
-        $data['birthday'] = $request->birthday;
-        $data['gender'] = $request->gender;
-        $data['email'] = $request->email;
-        $data['phone'] = $request->phone;
+        $request->validate([
+            'first_name' => 'required',
+            'last_name'  => 'required',
+            'birthday'   => 'required|date',
+            'gender'     => 'required|in:Male,Female',
+            'email'      => 'required|email',
+            'phone'      => 'required|numeric',
+        ]);
+        pelanggan::create($request->all());;
 
-        Pelanggan::create($data);
+
+        // $data['first_name'] = $request->first_name;
+        // $data['last_name'] = $request->last_name;
+        // $data['birthday'] = $request->birthday;
+        // $data['gender'] = $request->gender;
+        // $data['email'] = $request->email;
+        // $data['phone'] = $request->phone;
+
+        // Pelanggan::create($data);
 
         return redirect()->route('pelanggan.index')->with('success', 'Penambahan Data Berhasil!');
     }
@@ -66,19 +77,32 @@ class PelangganController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $pelanggan_id = $id;
-        $pelanggan = Pelanggan::findOrFail($pelanggan_id);
 
-        $pelanggan->first_name = $request->first_name;
-        $pelanggan->last_name = $request->last_name;
-        $pelanggan->birthday = $request->birthday;
-        $pelanggan->gender = $request->gender;
-        $pelanggan->email = $request->email;
-        $pelanggan->phone = $request->phone;
+        $request->validate([
+            'first_name' => 'required',
+            'last_name'  => 'required',
+            'birthday'   => 'required|date',
+            'gender'     => 'required|in:Male,Female',
+            'email'      => 'required|email',
+            'phone'      => 'required|numeric',
+        ]);
 
-
-        $pelanggan->save();
+        $pelanggan = pelanggan::findOrFail($id);
+        $pelanggan->update($request->all());
         return redirect()->route('pelanggan.index')->with('success', 'Data Berhasil Diubah!');
+
+        // $pelanggan_id = $id;
+        // $pelanggan = Pelanggan::findOrFail($pelanggan_id);
+
+        // $pelanggan->first_name = $request->first_name;
+        // $pelanggan->last_name = $request->last_name;
+        // $pelanggan->birthday = $request->birthday;
+        // $pelanggan->gender = $request->gender;
+        // $pelanggan->email = $request->email;
+        // $pelanggan->phone = $request->phone;
+        // $pelanggan->save();
+
+
     }
 
     /**
