@@ -370,13 +370,13 @@
                                     <!-- First Name -->
                                     <div class="mb-3">
                                         <label for="first_name" class="form-label">First name</label>
-                                        <input type="text" id="first_name" class="form-control"  name="first_name" required>
+                                        <input type="text" id="first_name" class="form-control"  name="first_name" value="{{ $dataPelanggan->first_name }}" required>
                                     </div>
 
                                     <!-- Last Name -->
                                     <div class="mb-3">
                                         <label for="last_name" class="form-label" >Last name</label>
-                                        <input type="text" id="last_name" class="form-control" name="last_name" required>
+                                        <input type="text" id="last_name" class="form-control" name="last_name" value="{{ $dataPelanggan->last_name }}" required>
                                     </div>
                                 </div>
 
@@ -384,7 +384,7 @@
                                     <!-- Birthday -->
                                     <div class="mb-3">
                                         <label for="birthday" class="form-label" >Birthday</label>
-                                        <input type="date" id="birthday" class="form-control" name="birthday">
+                                        <input type="date" id="birthday" class="form-control" name="birthday" value="{{ $dataPelanggan->birthday }}">
                                     </div>
 
                                     <!-- Gender -->
@@ -402,13 +402,13 @@
                                     <!-- Email -->
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="text" id="email" class="form-control" name="email" required>
+                                        <input type="text" id="email" class="form-control" name="email" value="{{ $dataPelanggan->email }}" required>
                                     </div>
 
                                     <!-- Phone -->
                                     <div class="mb-3">
                                         <label for="phone" class="form-label">Phone</label>
-                                        <input type="text" id="phone" class="form-control" name="phone">
+                                        <input type="text" id="phone" class="form-control" name="phone" value="{{ $dataPelanggan->phone }}">
                                     </div>
 
                                     <!-- Buttons -->
